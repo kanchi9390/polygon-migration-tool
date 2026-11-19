@@ -1,0 +1,16 @@
+# Secrets and local config
+.env
+
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# App logs
+logs/
+PolygonMigration/logs/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
