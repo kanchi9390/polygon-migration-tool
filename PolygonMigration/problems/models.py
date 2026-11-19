@@ -34,6 +34,8 @@ class Problem(models.Model):
         genie_plus (bool): Genie plus flag.
         content_video_url (str): URL to content video.
         voice_assistant (str): Voice assistant field.
+        notes (str): Notes section from the Polygon problem statement.
+        genie_chat (bool): Genie chat flag.
     """
     DIFFICULTY_CHOICES = [
         ('easy', 'Easy'),
