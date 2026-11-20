@@ -134,6 +134,16 @@ AZURE_USERNAME = os.getenv("AZURE_USERNAME")
 AZURE_PASSWORD = os.getenv("AZURE_PASSWORD")
 AZURE_CONTAINER_NAME = os.getenv("AZURE_CONTAINER_NAME")
 
+# Which storage backend receives the test-case files: "azure" or "minio" (any S3-compatible store)
+STORAGE_PROVIDER = os.getenv("STORAGE_PROVIDER", "azure")
+
+# S3-compatible storage (RustFS / MinIO / AWS S3 / Cloudflare R2)
+MINIO_ENDPOINT = os.getenv("MINIO_ENDPOINT")
+MINIO_ACCESS_KEY = os.getenv("MINIO_ACCESS_KEY")
+MINIO_SECRET_KEY = os.getenv("MINIO_SECRET_KEY")
+MINIO_BUCKET_NAME = os.getenv("MINIO_BUCKET_NAME")
+MINIO_SECURE = os.getenv("MINIO_SECURE", "False").strip().lower() == "true"
+
 REDIS_HOST = os.getenv("REDIS_HOST")
 REDIS_PORT = os.getenv("REDIS_PORT")
 REDIS_PASSWORD = os.getenv("REDIS_PASSWORD")
